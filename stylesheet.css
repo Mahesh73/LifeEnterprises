@@ -1,9 +1,16 @@
+header nav ul li a{
+    color: #2384C6;
+}
+header nav ul li a:hover{
+    color: #00457B;
+}
 #myBtn {
     display: none;
     position: fixed;
     bottom: 20px;
     right: 30px;
     z-index: 99;
+    background-color: #2384C6;
 }
 
 .test{
@@ -14,4 +21,12 @@
     z-index: 1;
     position: fixed;
     transform: rotate(-90deg);
+}
+.borderb{
+    border-bottom: 3px solid black;
+    width: 100px;
+    margin-left: 500px;
+}
+#partners img{
+    margin: 5px;
 }
