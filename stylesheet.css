@@ -24,8 +24,7 @@
     transform-origin: right;
 }
 #partners{
-    padding: 3rem;
-    padding-top: 3rem;
+    padding: 0 3rem;
 }
 #partners img{
     margin: 5px;
@@ -53,6 +52,17 @@
 #about{
     padding: 2% 0;
 }
+#about i{
+    border-radius: 50%;
+    background: cornflowerblue;
+    color: white;
+    padding: 5%;
+    font-size: 50px;
+    transition: 1s;
+}
+#about i:hover{
+    transform: rotate(360deg);
+}
 .horizontal-line{
     content: '';
     position: absolute;
@@ -61,11 +71,41 @@
     background: #00457B;
 }
 .owl-carousel img{
-    height: 250px;
+    height: 300px;
 }
 .carousel-caption h1{
     font-size: 5rem;
     color: #D00000;
+}
+#sell:hover .overlay{
+    opacity: 1;
+}
+.overlay{
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-menu{
+    display: none;
+    position: absolute;
+}
+.dropdown-menu a{
+    display: block;
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
 }
 @media (max-width: 576px){
     .navbar{
